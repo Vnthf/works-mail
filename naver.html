@@ -25,20 +25,26 @@
 			<ul class="mynav">
 				<li><a href="#" class="nickname">최민호</a><span>님</span>
 					<a href="#" class="logout_btn icon_p"></a>
-					<div class="mynav_box"></div>
+					<div class="mynav_box">
+						<ul>
+						<li><a href="#">개인정보 설정</a></li>
+						<li><a href="#">사용 현황</a></li>
+						<li><a href="#">부재중 설정</a></li>
+						</ul>
+					</div>
 				</li>
 				<li>
-					<span class="bar">|</span>
-					<a href="#">결제</a> 
+					<span class="bar">|</span></li>
+					<li><a href="#">결제</a> 
 				</li>
 				<li>
-					<span class="bar">|</span>
-					<a href="#">공유설비</a>
+					<span class="bar">|</span></li>
+					<li><a href="#">공유설비</a>
 				</li>
 				<li>
-					<div class="search_warp">
+					<div class="search_warp icon_p">
 						<input placeholder="사원검색" class="search_box"/>
-						<a href="#" class="search_btn"><img src="search_btn.png"/></a>
+						<a href="#" class="search_btn"></a>
 					</dip>
 				</li>
 			</ul>
@@ -52,21 +58,21 @@
 					<a href="#" class="sch_wbtn"><span>약속 메일쓰기<span></a>
 				</div>
 			</div>
-			<div calss="mail_wrap">
+			<div class="mail_wrap">
 				<div class="info_btn_wrap">
-					<a href="#">
+					<a href="#" class="under">
 						<span class="mail_ct">999+</span>
 						<span>안읽음</span>
 					</a>
-					<a href="#">
+					<a href="#" class="under">
 						<img src="important.png" alt="중요메일 이미지"/>
 						<span>중요</span>
 					</a>
-					<a href="#">
+					<a href="#" class="under">
 						<img src="attach.png" alt="첨부 이미지"/>
 						<span>첨부</span>
 					</a>
-					<a href="#">
+					<a href="#" class="under">
 						<img src="receiver.png" alt="받는 사람"/>
 						<span>받는사람</span>
 					</a>
@@ -82,7 +88,7 @@
 								정리하기<img src="up_ico.png" alt="up_icon"/>
 							</button>
 						</li>
-						<li>
+						<li class="checked">
 							<div class="menu_bar">
 								<span class="icon receive"></span>
 								<span class="menu_txt">받은메일함</span>
@@ -112,6 +118,7 @@
 							</div>
 						</li>
 					</ul>
+
 				</div>
 				<div class="vip_section">
 					<input type="checkbox" id="vip_open_chk" class="list_open_chk"/>
@@ -138,44 +145,582 @@
 							<span class="title">코미코</span>
 							<span class="icon edit"></span></li>
 						<li><span class="icon temp"></span>
-							<span class="title">코미코 나의 메일</span>
+							<span class="title">나의 메일1</span>
 							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일2</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일3</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일4</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일5</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일6</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일6</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일6</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일7</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일8</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일9</span>
+							<span class="icon edit"></span></li>
+						<li><span class="icon temp"></span>
+							<span class="title">나의 메일10</span>
+							<span class="icon edit"></span></li>											
 					</ul>
 				</div>	
+				<div class="mail_nav_wrap">
+					<ul>
+						<li>
+							<div class="menu_bar">
+								<span class="icon spam"></span>
+								<span class="menu_txt">스펨메일함</span>
+							</div>
+						</li>
+						<li>
+							<div class="menu_bar">
+								<span class="icon delete"></span>
+								<span class="menu_txt">휴지통</span>
+							</div>
+							<span class="icon delete2"></span>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</aside>
 		<section id="content">
 			<div class="content_header">
-				<a class="expand left"><span class="icon_m arrow"></span></a>
-				<a class="expand right"><span class="icon_m arrow"></span></a>
+				<a class="expand left"><span class="icon_m left_arrow"></span></a>
+				<a class="expand right"><span class="icon_m left_arrow"></span></a>
 
 				<div class="header_bar">
 					<input type="text" placeholder="메일검색"/>
-					<a class="search_btn"></a>
-					<a class="detail_option">상세<span class="icon_m arrow"></span></a>
-					<span>받은메일함 <span>8</span>/<span>123</span></span>
-					<span>안읽은 메일 삭제</span>
+					<a class="search_btn"><span class="icon_m search"></a>
+					<a class="detail_option"><span class="word">상세</span><span class="icon_m down_arrow"></span></a>
+					<span><b>받은메일함 </b> <span class="non_read_cnt"><b><a href="#" class="under">8</a></b></span>/<span><b><a href="#" class="under">123</a></b></span></span>
+					<span class="not_read_del"><a href="#" class="under">안읽은 메일 삭제</a></span>
 				</div>
 			</div>			
 			<div class="content_nav">
-				네비
+				<a href="#" class="simple_btn list"><input type="checkbox"/><span class="icon_m down_arrow"></span></a>
+				<a href="#" class="simple_btn">읽음</a>
+				<a href="#" class="simple_btn"><span class="icon_m delete"></span><b>삭제</b></a>
+				<a href="#" class="simple_btn"><b>스펨신고</b></a>
+
+				<a href="#" class="thr_first">답장</a>
+				<a href="#" class="thr_mid">전체답장</a>
+				<a href="#" class="thr_last">전달</a>
+
+				<a href="#" class="simple_btn">이동<span class="icon_m down_arrow"></span></a>
+				<a href="#" class="simple_btn">정리하기</a>
+			
+				<a href="#">추가기능<span class="icon_m down_arrow"></span></a>
+				<a href="#">필터<span class="icon_m down_arrow"></span></a>
+				<span class="bar">|</span>
+				<a href="#">번역<span class="icon_m down_arrow"></span></a>
 			</div>
 			<div class="content_mail">
-				<div class="mail_list">
+				<div class="mail_list_wrap">
+					<div class="mail_list">
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">Amazon Local</div>
+								<div class="mail_content">Platiun SorinvieTOnn Oil Change or Brake Service <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">Amazon Local</div>
+								<div class="mail_content">Platiun SorinvieTOnn Oil Change or Brake Service <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">Amazon Local</div>
+								<div class="mail_content">Platiun SorinvieTOnn Oil Change or Brake Service <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item unread"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">(설문) 대외활동, 의존증 현황 <span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+						<div class="list_item"> 
+							<div class="check_btn_sec"><input type="checkbox"/></div>
+							<div class="fav_btn_sec"><span class="icon_m favorite"></span></div>
+							<div class="read_btn_sec"><span class="icon_m mail"></span></div>
+							<div class="content_sec">
+								<div class="mail_title">사람인</div>
+								<div class="mail_content">마지막<span class="icon_m preview"></span></div>
+							</div>
+							<div class="time_sec"><div class="time">15-03-22 22:09</div><div class="size">182.2KB</div></div>
+						</div>
+
+					</div>
+				</div><!--mail_list_wrap-->
+				<div class="devide_bar">
+
 				</div>
-				<div class="mail_block">
-				</div>	
+				<div class="mail_block_wrap">
+					<div class="mail_block">
+						<div class="mail_header">
+							<div class="mail_title"><span class="icon_m favorite"></span>
+							<span class="word"><b>We've missed you! The best deals are waing for you here</b></span>
+								<span class="icon_m preview"></span>
+								<span class="time">15-03-22 (일) 01:00</span>
+							</div>
+							<div class="from"><a class="icon_w minimize"><span class="blind">보낸사람 열기</span></a>
+								<span class="sender_title">보낸사람 : </span>
+								<div class="sender"><span class="icon_m favorite"></span>AliExprfewfwefwefwefwss&lt;promotion@aliexpress.com&gt;</div>
+							</div>
+							<div class="to"><a class="icon_w"></a>
+								<span class="receiver_title">받는사람 : </span>
+								<div class="receiver">이다빈&gt;lee.db@nhnent.co&lt, 정하선&gt;hasun.jung@nhnent.co&lt, 김지혜&gt;sarah@nhnent.co&lt, 이해선&gt;haesun.lee@nhnent.co&lt, 신지희&gt;jihee.shin@nhnent.co&lt, 최문수&gt;blackjin118@nhnent.co&lt, 류경진&gt;kyungjin.ryu@nhnent.co&lt, 최민호<&gt;minho-choi@nhnent.co&lt</div>
+							</div>
+							
+							
+						</div>
+						<div class="content">
+							<img src="sample.png"/>
+						</div>
+					</div>	
+				</div>
 			</div>
 		</section>	
 	</div>
-	<input value="javascript:a(3,6)"/>
 	<footer id="footer">
-		<a>푸터</a>
+		<div class="footer_left">
+			<span class="storage_size">
+				<span>용량</span>
+				<span class="green">3.22GB</span>
+				<span>/100GB</span>
+			</span>
+			<span class="bar">|</span>
+			<a href="#"><span>환경설정</span></a>
+			<span class="bar">|</span>
+			<span class="setting_icon icon_m"></span>
+			<a href="#"><span>스킨설정</span></a>
+			<span class="bar">|</span>
+			<a href="#"><span>위젯사용하기</span></a>
+			<span class="new_icon icon_m"></span>
+			<span class="bar">|</span>
+			<a href="#"><span>단축키</span></a>
+		</div>
+		<div class="footer_middle">
+			<p>CopyRight © <a href="http://Vnthf.github.io" class="green">MinhoNim.</a> All Right Reserved.</p>
+		</div>
+		<div class="footer_right">
+			<a href="#"><span>What's new?</span></a>
+			<span class="new_icon icon_m"></span>
+			<span class="bar">|</span>
+			<a href="#"><span>공지사항</span></a>
+			<span class="bar">|</span>
+			<a href="#"><span>Works 고객센터</span></a>
+			<span class="bar">|</span>
+			<a href="#"><span>문의하기</span></a>
+		</div>
 	</footer>
-	<script>
-		function a(a,b){
-			return a+b;
-		}
-	</script>
+	
 </body>
 </html>

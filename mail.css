@@ -23,15 +23,15 @@ html,body{
 	color:    white;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    white;
-   opacity:  1;
+	color:    white;
+	opacity:  1;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    white;
-   opacity:  1;
+	color:    white;
+	opacity:  1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
-   color:    white;
+	color:    white;
 }
 .icon{
 	background: url(icon_t.png) no-repeat;
@@ -612,18 +612,18 @@ section .content_nav>.simple_btn{
 	margin-left:4px;
 }
 section .content_nav .down_arrow{
-  width: 9px;
-  height: 6px;
-  background-position: -19px 0px;
-  display: inline-block;
-  margin-left: 1px;
+	width: 9px;
+	height: 6px;
+	background-position: -19px 0px;
+	display: inline-block;
+	margin-left: 1px;
 }
 section .content_nav .delete{
-  width: 11px;
-  height: 8px;
-  background-position: -68px 0px;
-  display: inline-block;
-  margin-left: 0px;
+	width: 11px;
+	height: 8px;
+	background-position: -68px 0px;
+	display: inline-block;
+	margin-left: 0px;
 }
 section .content_nav>.simple_btn.list{
 	padding:7px 5px 7px 6px;
@@ -787,22 +787,22 @@ section .content_mail .mail_block .to{
 	position: relative;
 } 
 section .content_mail .mail_block .expand{
-  width: 16px;
-  height: 16px;
-  background-position: -120px -183px;
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  top:5px;
+	width: 16px;
+	height: 16px;
+	background-position: -120px -183px;
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	top:5px;
 } 
 section .content_mail .mail_block .minimize{
-  width: 16px;
-  height: 16px;
-  background-position: -106px -183px;
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  left:-1px;
+	width: 16px;
+	height: 16px;
+	background-position: -106px -183px;
+	display: inline-block;
+	cursor: pointer;
+	position: absolute;
+	left:-1px;
 } 
 section .content_mail .mail_block .sender_title, section .content_mail .mail_block .receiver_title{
 	width:50px;
